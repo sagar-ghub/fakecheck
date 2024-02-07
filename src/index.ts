@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import { Identify } from "./Interfaces/index";
 
 import { myDataSource } from "./db/index";
-import { Contact } from "./entity/identify.model";
+const Contact  =require("./entity/identify.model");
 
 dotenv.config();
 const app: Express = express();

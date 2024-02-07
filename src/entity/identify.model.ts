@@ -1,7 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, DeleteDateColumn } from "typeorm";
+const { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, DeleteDateColumn } =require("typeorm");
 
-@Entity()
-export class Contact {
+ class Contact {
   @PrimaryGeneratedColumn()
   id!: number;
 
@@ -26,3 +25,5 @@ export class Contact {
   @DeleteDateColumn()
   deletedAt!: Date | null;
 }
+
+module.exports=Contact;
