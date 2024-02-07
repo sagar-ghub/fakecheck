@@ -1,5 +1,6 @@
 const { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, DeleteDateColumn } =require("typeorm");
 
+@Entity()
  class Contact {
   @PrimaryGeneratedColumn()
   id!: number;
