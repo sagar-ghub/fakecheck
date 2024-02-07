@@ -8,7 +8,7 @@ export const myDataSource = new DataSource({
     // password: process.env.PASSWORD,
     // database: process.env.DB,
     url:"postgres://root:2iOxyW8qcgjtEmoZ3jAnES08XAz10Xcp@dpg-cn1tgbicn0vc73cqoln0-a.singapore-postgres.render.com/employee_aqvm"+"?ssl=true",//It will die after some days
-    entities: ["src/entity/*.ts"],
+    entities: ["src/entity/*.js"],
     logging: false,
     synchronize: true,
 })
